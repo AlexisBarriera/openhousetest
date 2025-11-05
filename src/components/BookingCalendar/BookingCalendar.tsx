@@ -176,7 +176,7 @@ const loadExternalBookings = async (targetDate?: Date) => {
       <div className="booking-container">
         <div className="booking-header">
           <p className="booking-tagline">Programa una Cita</p>
-          <h2 className="booking-title">Reserva Tu Consulta</h2>
+          <h2 className="booking-title">Reserva Tu Consulta de Programacion</h2>
           <p className="booking-subtitle">
             Elige una fecha y hora conveniente para tu cita. Recibirás confirmación instantánea
             por correo electrónico y la cita se sincronizará automáticamente con nuestro calendario.
