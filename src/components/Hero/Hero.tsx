@@ -21,12 +21,12 @@ const Hero: React.FC = () => {
               className="inline-block mx-auto w-auto h-[36rem] object-contain" 
             />
           </p>
-          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">Lorem Ipsum Dolor Sit <span className="gradient-text">Amet Consectetur</span></h1>
+          <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">Lion Tech LLC. <span className="gradient-text">Programacion y codigo</span></h1>
           <div className="w-20 h-1 bg-gradient-to-r from-gold to-gold-dark mx-auto my-8"></div>
           <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button onClick={() => navigateToSection('booking')} className="bg-gradient-to-r from-gold to-gold-dark text-navy-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">Lorem Ipsum Dolor</button>
-            <button onClick={() => navigateToSection('services')} className="border-2 border-gold text-gold font-semibold px-8 py-3 rounded-full hover:bg-gold hover:text-navy-primary transition-all duration-300">Adipiscing Elit</button>
+            <button onClick={() => navigateToSection('booking')} className="bg-gradient-to-r from-gold to-gold-dark text-navy-primary font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">Reserva cita</button>
+            <button onClick={() => navigateToSection('services')} className="border-2 border-gold text-gold font-semibold px-8 py-3 rounded-full hover:bg-gold hover:text-navy-primary transition-all duration-300">Contactanos</button>
           </div>
         </div>
 
@@ -59,5 +59,6 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
 
 
