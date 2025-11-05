@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-gold uppercase tracking-widest text-sm mb-3">Encuesta de contacto</p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Contáctenos para hablar sobre <span className="gradient-text">sus finanzas</span></h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Contáctenos para hablar sobre <span className="gradient-text">sus preguntas de programacion</span></h2>
           <p className="text-gray-300 max-w-2xl mx-auto">Complete el formulario y nos pondremos en contacto con usted en un plazo de 24 horas hábiles.</p>
         </div>
 
