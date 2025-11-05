@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
              <img 
               src="https://files.catbox.moe/tyoceu.png" 
               alt="Lorem Ipsum Technology" 
-              className="inline-block mx-auto w-auto h-52 object-contain" 
+              className="inline-block mx-auto w-auto h-[30rem] object-contain" 
             />
           </p>
           <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6">Lorem Ipsum Dolor Sit <span className="gradient-text">Amet Consectetur</span></h1>
@@ -59,3 +59,4 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
+
