@@ -60,7 +60,7 @@ const Contact: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="lg:w-2/5">
             <h3 className="font-heading text-2xl mb-6">Información adicional</h3>
-            <p className="text-gray-300 mb-8">Nuestro equipo está listo para ayudarte con cualquier consulta sobre nuestros servicios. No dudes en contactarnos por teléfono, email o visitando nuestras oficinas.</p>
+            <p className="text-gray-300 mb-8">Lorem Ipsum Dolor sit</p>
 
             <div className="space-y-4">
               <div className="bg-gradient-to-r from-gold/5 to-gold/2 p-4 rounded-lg border-l-4 border-gold transition-all hover:translate-x-2">
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Localización de oficina</h4>
-                    <p className="text-gray-300 text-sm">29 C. Cristina<br />Ponce, Puerto Rico 00730</p>
+                    <p className="text-gray-300 text-sm">Lorem<br />Ponce, Puerto Rico 00730</p>
                   </div>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Número de teléfono</h4>
-                    <p className="text-gray-300 text-sm">+1 (939) 608-3732</p>
+                    <p className="text-gray-300 text-sm">+1 (111) 111-1111</p>
                   </div>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-gray-300 text-sm">shaddaietp@gmail.com</p>
+                    <p className="text-gray-300 text-sm">test@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -102,10 +102,10 @@ const Contact: React.FC = () => {
                     <i data-feather="clock" className="text-navy-primary text-sm"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Horas de oficina</h4>
+                    <h4 className="font-semibold mb-1">Horas</h4>
                     <p className="text-gray-300 text-sm">
                       Lunes - Viernes: 8:30 AM - 5:00 PM<br />
-                      Sábado (PHP solo): 10:00 AM - 1:00 PM
+                      Sábado: 10:00 AM - 1:00 PM
                     </p>
                   </div>
                 </div>
