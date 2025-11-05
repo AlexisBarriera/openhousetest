@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Dolor | Sit Amet Consectetur</title>
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/oilzqt.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lato:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            primary: '#1A1A1A',
+                            medium: '#2C2C2C',
+                            light: '#3A3A3A',
+                        },
+                        gold: {
+                            DEFAULT: '#DC143C',
+                            dark: '#B22222',
+                        },
+                        accent: {
+                            blue: '#FF4444',
+                        },
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Lato', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(44, 44, 44, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(220, 20, 60, 0.2);
+        }
+        .gradient-border {
+            border-image: linear-gradient(135deg, #DC143C, #B22222);
+            border-image-slice: 1;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #DC143C, #B22222);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(220, 20, 60, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(220, 20, 60, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 20, 60, 0); }
+        }
+        /* Loading Skeleton Styles */
+        .skeleton {
+            background: linear-gradient(90deg,
+                #2C2C2C 0%,
+                #3A3A3A 50%,
+                #2C2C2C 100%
+            );
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s ease-in-out infinite;
+        }
+
+        @keyframes skeleton-loading {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+
+        .skeleton-text {
+            height: 16px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .skeleton-title {
+            height: 32px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            width: 60%;
+        }
+
+        .skeleton-card {
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .skeleton-circle {
+            border-radius: 50%;
+        }
+
+        .skeleton-button {
+            height: 48px;
+            border-radius: 24px;
+            width: 200px;
+        }
+
+        #app {
+            min-height: 100vh;
+        }
+    </style>
+    <script>
+        /* Persistent Storage */
+        window.persistentStorage = {
+          setItem: async (key, value) => {
+            localStorage.setItem(key, value);
+            return Promise.resolve();
+          },
+          getItem: async (key) => {
+            return Promise.resolve(localStorage.getItem(key));
+          },
+          removeItem: async (key) => {
+            localStorage.removeItem(key);
+            return Promise.resolve();
+          },
+          clear: async () => {
+            localStorage.clear();
+            return Promise.resolve();
+          }
+        };
+    </script>
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+    }
+  }
+  </script>
+  <script>
+    feather.replace();
+  </script>
+</head>
+<body class="bg-navy-primary font-body text-white">
+  <div id="app"></div>
+  <script type="module" src="/src/index.tsx"></script>
+</body>
